@@ -1,13 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Wihdatul_Maula_Z
-{
-
-}
 class Program
 {
     static void Main(string[] args)
@@ -33,21 +25,21 @@ class Program
             switch (pilihan)
             {
                 case "1":
-                    Console.Write("Masukkan suhu dalam satuan Celcius: ");
+                    Console.Write("Masukkan suhu dalam satuan Celcius yaa: ");
                     celcius = Convert.ToDouble(Console.ReadLine());
                     hasil = (celcius * 9 / 5) + 32; // Rumus Celcius ke Fahrenheit
                     Console.WriteLine("Hasil Konversi: {0} Celcius = {1} Fahrenheit", celcius, hasil);
                     break;
 
                 case "2":
-                    Console.Write("Masukkan suhu dalam satuan Celcius: ");
+                    Console.Write("Masukkan suhu dalam satuan Celcius yaa: ");
                     celcius = Convert.ToDouble(Console.ReadLine());
                     hasil = celcius + 273; // Rumus Celcius ke Kelvin
                     Console.WriteLine("Hasil Konversi: {0} Celcius = {1} Kelvin", celcius, hasil);
                     break;
 
                 case "3":
-                    Console.Write("Masukkan suhu dalam satuan Celcius: ");
+                    Console.Write("Masukkan suhu dalam satuan Celcius yaa: ");
                     celcius = Convert.ToDouble(Console.ReadLine());
                     hasil = celcius * 4 / 5; // Rumus Celcius ke Reamur
                     Console.WriteLine("Hasil Konversi: {0} Celcius = {1} Reamur", celcius, hasil);
@@ -55,18 +47,20 @@ class Program
 
                 case "4":
                     isRunning = false; // Keluar dari program
+                    Console.WriteLine("Terima kasih telah percaya dengan saya secara sepenuh hati :D.");
                     break;
 
                 default:
-                    Console.WriteLine("Pilihan tidak ada. Silakan coba lagi.");
+                    Console.WriteLine("Pilihan tidak ada. Silakan coba lagi mungkin ada yang salah sama si doi.");
                     break;
             }
 
             if (isRunning)
             {
                 Console.WriteLine("========= HASIL KONVERSI =========");
+                Console.WriteLine("Nah sudah udah tau kan? ayo balik ke halaman utama, tekan tombol apa aja asal jangan tekan tombol hati si doi nanti nyesel :>");
                 Console.ReadKey();
-            }
+                    }
         }
     }
 }
